@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source ColorSet.sh
+source DefineAuthorFile.sh
 
 echo -e "$LIGHT_BLUE\rBem vindo ao ZF2 Creator\n"
 echo -e "$NO_COLOUR\rO que deseja criar?\n"
