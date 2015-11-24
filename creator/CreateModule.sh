@@ -6,4 +6,4 @@ source creator/CreateControllerFile.sh
 source creator/CreateConfigFile.sh
 source creator/MoveModuleToPath.sh
 
-break
+exit

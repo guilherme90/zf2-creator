@@ -1,6 +1,8 @@
 #!/bin/bash
 
-read -p "1 - Qual o nome do módulo? " moduleName
+read -e -p "1 - Selecione o path raíz da sua aplicação: " basePath
+read -p "2 - Digite o nome do módulo: " moduleName
+
 path="module";
 
 CreateDirectories() {
@@ -20,6 +22,7 @@ if [ ! -d $path ] ; then
   CreateDirectories
 fi
 
+export basePath=$basePath
 export module=$moduleName
 export pathModule=$path/$module
 export pathController=$pathModule/src/$module/Controller
