@@ -67,6 +67,11 @@ if [ $option == "Controller" ] ; then
   read -p "Digite o nome do Controlador: " controllerName
 
   CreateControllerFile > $pathModule/Controller/$controllerName.php
+
+  if [ ! -d $pathModule/Controller/Factory ] ; then
+    mkdir $pathModule/Controller/Factory
+  fi
+
   CreateControllerFactoryFile > $pathModule/Controller/Factory/${controllerName}Factory.php
 
   printf "\n...Concluído.\n"
