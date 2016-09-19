@@ -26,10 +26,26 @@ return [
     ],
     'router' => [
         'routes' => [
+            'route.name' => [
+                'type' => Literal::class,
+                'options' => [
+                    'route' => '/my-route-name',
+                    'defaults' => [
+                        'controller' => $controllerName::class,
+                        'action' => 'onDispatch'
+                    ]
+                ],
+                'may_terminate' => true,
+                'child_routes' => [
 
+                ]
+            ]
         ]
     ],
     'view_manager' => [
+        'strategies' => [
+            'ViewJsonStrategy'
+        ],
         'template_path_stack' => [
             __DIR__ . '/../view',
         ]

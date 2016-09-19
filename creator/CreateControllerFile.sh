@@ -7,6 +7,7 @@ CreateControllerFile() {
 namespace $moduleName\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ModelInterface;
 use Zend\View\Model\ViewModel;
 
 /**
@@ -15,11 +16,12 @@ use Zend\View\Model\ViewModel;
 class $controllerName extends AbstractActionController
 {
     /**
-     * @return ViewModel
+     * @return ModelInterface
      */
-    public function onDispatchAction()
+    public function onDispatchAction() : ModelInterface
     {
-
+        return (new ViewModel)
+            ->setTemplate('');
     }
 }
 _PHP_
@@ -43,7 +45,7 @@ class ${controllerName}Factory implements FactoryInterface
     /**
      * {@inheritdoc}
      */
-    public function createService(ServiceLocatorInterface \$serviceLocator)
+    public function createService(ServiceLocatorInterface \$serviceLocator) : $controllerName
     {
         \$realServiceLocator = \$serviceLocator->getServiceLocator();
 

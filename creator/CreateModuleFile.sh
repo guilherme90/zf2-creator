@@ -16,11 +16,9 @@ class Module implements ConfigProviderInterface
    /**
     * {@inheritDoc}
     */
-    public function getConfig()
+    public function getConfig() : array
     {
-        return array_merge_recursive(
-           require __DIR__ . '/config/module.config.php'
-        );
+        return require __DIR__ . '/config/module.config.php';
     }
 }
 _PHP_
