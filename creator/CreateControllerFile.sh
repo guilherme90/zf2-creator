@@ -82,3 +82,9 @@ if [ $option == "Controller" ] ; then
 
   exit
 fi
+
+if [ $option == "ControllerPlugin" ] ; then
+  source creator/CreateControllerPluginFile.sh
+
+  exit
+fi

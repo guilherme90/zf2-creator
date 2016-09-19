@@ -6,7 +6,7 @@ source DefineAuthorFile.sh
 echo -e "$LIGHT_BLUE\rBem vindo ao ZF2 Creator\n"
 echo -e "$NO_COLOUR\rO que deseja criar?\n"
 
-options=("Module" "Controller" "Sair")
+options=("Module" "Controller" "ControllerPlugin" "Sair")
 select option in "${options[@]}"
 do
   case $option in
@@ -17,6 +17,12 @@ do
       ;;
     "Controller")
       printf "\n---- Opção selecionada: Controller ----\n"
+
+      export $option
+      source list-modules/FindModulesFromPath.sh
+      ;;
+    "ControllerPlugin")
+      printf "\n---- Opção selecionada: Controller Plugin ----\n"
 
       export $option
       source list-modules/FindModulesFromPath.sh

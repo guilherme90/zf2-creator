@@ -27,6 +27,7 @@ Casos de dúvidas, veja exemplo no site do [**phpDocumentor**](http://manual.php
 Opções:
   - 1 - Module: Cria o módulo por completo (estrutura de diretório, arquivos padrões, e Controller seguindo com padrão Factory)
   - 2 - Controller: Cria o controller com padrão Factory
+  - 3 - Controller Plugin: Cria um plugin para usar em seus controladores
 
 ### Run
 Para rodar o script, basta executar:
