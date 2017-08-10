@@ -1,7 +1,7 @@
 ## ZF2 Creator
-A simple script writen in Bash to create module and controller following Zend FRamework 2 Structure.
+A simple script written in Bash to create module and controller, following Zend FRamework 2 Structure.
 
-You should change file **DefineAuthorFile** and modify the string **author**. Per example:
+You should change file **DefineAuthorFile** and modify the string **author**. e.g:
 
 **DefineAuthorFile**
 ```sh
@@ -20,7 +20,7 @@ Result:
 ```
 
 ### Resources
-  - **Module**: Full module (directory structure, files defaults, Controller with **Factory** pattern
+  - **Module**: Full module (directory structure, default files, Controller with **Factory** pattern
   - **Controller**: Create Controller with **Factory** pattern
   - **Controller Plugin**: Create the plugin to usage inside controllers
 
