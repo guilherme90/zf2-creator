@@ -8,7 +8,7 @@ You should change file **DefineAuthorFile** and modify the string **author**. Pe
 #!/bin/bash
 export author="@author Guilherme P. Nogueira <guilhermenogueira90@gmail.com>"
 ```
-Result in file **PHP**:
+Result:
 ```php
 <?php
 
