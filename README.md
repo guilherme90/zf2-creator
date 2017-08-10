@@ -1,15 +1,14 @@
 ## ZF2 Creator
-Um script simples escrito em Bash para criar módulo e controlador seguindo a estrutura do Zend Framework 2.
+A simple script writen in Bash to create module and controller following Zend FRamework 2 Structure.
 
-Você deve alterar o arquivo **DefineAuthorFile** e modificar a string **author**. Por exemplo:
+You should change file **DefineAuthorFile** and modify the string **author**. Per example:
 
 **DefineAuthorFile**
 ```sh
 #!/bin/bash
 export author="@author Guilherme P. Nogueira <guilhermenogueira90@gmail.com>"
 ```
-
-Resultado no arquivo **PHP**:
+Result in file **PHP**:
 ```php
 <?php
 
@@ -20,21 +19,17 @@ Resultado no arquivo **PHP**:
  // source code...
 ```
 
-Casos de dúvidas, veja exemplo no site do [**phpDocumentor**](http://manual.phpdoc.org/HTMLSmartyConverter/HandS/phpDocumentor/tutorial_tags.author.pkg.html)
-
-### O Script
+### Resources
 
 Opções:
-  - 1 - Module: Cria o módulo por completo (estrutura de diretório, arquivos padrões, e Controller seguindo com padrão Factory)
-  - 2 - Controller: Cria o controller com padrão Factory
-  - 3 - Controller Plugin: Cria um plugin para usar em seus controladores
+  **Module**: Full module (directory structure, files defaults, Controller with **Factory** pattern
+  **Controller**: Create Controller with **Factory** pattern
+  **Controller Plugin**: Create the plugin to usage inside controllers
 
-### Run
-Para rodar o script, basta executar:
-
+### Running
 ```sh
 $ ./run.sh
 ```
 
-### Autor
+### Author
 Guilherme P. Nogueira
