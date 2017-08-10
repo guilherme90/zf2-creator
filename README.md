@@ -20,11 +20,9 @@ Result in file **PHP**:
 ```
 
 ### Resources
-
-Opções:
-  **Module**: Full module (directory structure, files defaults, Controller with **Factory** pattern
-  **Controller**: Create Controller with **Factory** pattern
-  **Controller Plugin**: Create the plugin to usage inside controllers
+  - **Module**: Full module (directory structure, files defaults, Controller with **Factory** pattern
+  - **Controller**: Create Controller with **Factory** pattern
+  - **Controller Plugin**: Create the plugin to usage inside controllers
 
 ### Running
 ```sh
